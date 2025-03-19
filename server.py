@@ -177,4 +177,4 @@ server_thread = threading.Thread(target=start_server)
 server_thread.start()
 
 # Start the command listener
-command_listener()
+#command_listener()
