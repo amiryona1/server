@@ -157,20 +157,8 @@ def start_server():
 
 # Command listener for stopping or restarting the server
 def command_listener():
-    # global stop_server
-    # while True:
-        #cmd = input("Enter command: ").strip().lower()
-        # if cmd == "stop":
-        #     print("[INFO] 🔴 Stopping the server...")
-        #     stop_server = True
-        #     break
-        # elif cmd == "restart":
-        #     print("[INFO] 🔄 Restarting the server...")
-        #     stop_server = True
-        #     time.sleep(2)
-        #     stop_server = False
-        #     start_server()
-        #     break
+    print("[INFO] Listening for commands...")  # ✅ Make sure there’s at least one indented line
+    pass  # ✅ If no commands, use pass to prevent indentation errors
 
 # Start the server in a separate thread
 server_thread = threading.Thread(target=start_server)
